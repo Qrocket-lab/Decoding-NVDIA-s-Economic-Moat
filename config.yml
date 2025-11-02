@@ -1,0 +1,20 @@
+data_sources:
+  alpha_vantage:
+    base_url: "https://www.alphavantage.co/query"
+    # API key loaded from environment variables
+  yahoo_finance:
+    start_date: "1980-01-01"
+    
+company:
+  ticker: "NVDA"
+  name: "NVIDIA Corporation"
+
+forecasting:
+  horizon: 2
+  test_size: 0.2
+  random_state: 42
+
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  forecasts: "data/forecasts"
